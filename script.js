@@ -96,7 +96,6 @@ function setupTransitionButtons() {
             
             // Determine which link was clicked and use appropriate colors
             if (url.includes('clovetwilight3')) {
-                // Clove's green color scheme (slightly brighter)
                 const cloveColors = {
                     '--green-dark': '#0a1f0a',
                     '--green-medium': '#1a5f1a',
@@ -106,11 +105,9 @@ function setupTransitionButtons() {
                     '--accent-glow': '#7aff7a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                
                 performTransition(url, cloveColors, 'Loading CloveTwilight3...', '🌸');
                 
             } else if (url.includes('themidnightcyan')) {
-                // Midnight Cyan's green color scheme (deeper)
                 const cyanColors = {
                     '--green-dark': '#051205',
                     '--green-medium': '#0f3d0f',
@@ -120,8 +117,127 @@ function setupTransitionButtons() {
                     '--accent-glow': '#6aff6a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                
                 performTransition(url, cyanColors, 'Loading TheMidnightCyan...', '🌙');
+                
+            } else if (url.includes('alextlm')) {
+                const alexColors = {
+                    '--green-dark': '#0f1f0a',
+                    '--green-medium': '#1f4f1a',
+                    '--green-light': '#2f7f2a',
+                    '--green-accent': '#6cff6c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#8aff8a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                performTransition(url, alexColors, 'Loading AlexTLM...', '⚡');
+                
+            } else if (url.includes('doughmination')) {
+                const doughColors = {
+                    '--green-dark': '#1a1f0a',
+                    '--green-medium': '#3a4f1a',
+                    '--green-light': '#5a7f2a',
+                    '--green-accent': '#7cff3c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#9aff5a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                performTransition(url, doughColors, 'Loading Doughmination...', '🍞');
+                
+            } else if (url.includes('hunt-rix')) {
+                const huntColors = {
+                    '--green-dark': '#0a1f1a',
+                    '--green-medium': '#1a4f3a',
+                    '--green-light': '#2a7f5a',
+                    '--green-accent': '#4cff7c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#6aff9a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                performTransition(url, huntColors, 'Loading Hunt-Rix...', '🎯');
+                
+            } else if (url.includes('mazeymoos')) {
+                const mazeyColors = {
+                    '--green-dark': '#1a0f1a',
+                    '--green-medium': '#3a2f3a',
+                    '--green-light': '#5a4f5a',
+                    '--green-accent': '#7c6c7c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#9a8a9a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                performTransition(url, mazeyColors, 'Loading MazeyMoos...', '🐄');
+                
+            } else if (url.includes('myluminarasystem')) {
+                const luminaraColors = {
+                    '--green-dark': '#0a0f1a',
+                    '--green-medium': '#1a2f3a',
+                    '--green-light': '#2a4f5a',
+                    '--green-accent': '#4c6c7c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#6a8a9a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                performTransition(url, luminaraColors, 'Loading MyLuminaraSystem...', '✨');
+                
+            } else if (url.includes('trans4trans')) {
+                const trans4transColors = {
+                    '--green-dark': '#1a0a1a',
+                    '--green-medium': '#3a1a3a',
+                    '--green-light': '#5a2a5a',
+                    '--green-accent': '#7c4c7c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#9a6a9a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                performTransition(url, trans4transColors, 'Loading Trans4Trans...', '🏳️‍⚧️');
+                
+            } else if (url.includes('transgamers')) {
+                const transgamersColors = {
+                    '--green-dark': '#0a1a0a',
+                    '--green-medium': '#1a3a1a',
+                    '--green-light': '#2a5a2a',
+                    '--green-accent': '#4c7c4c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#6a9a6a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                performTransition(url, transgamersColors, 'Loading TransGamers...', '🎮');
+                
+            } else if (url.includes('unifiedgaming-systems')) {
+                const unifiedColors = {
+                    '--green-dark': '#1a1a0a',
+                    '--green-medium': '#3a3a1a',
+                    '--green-light': '#5a5a2a',
+                    '--green-accent': '#7c7c4c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#9a9a6a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                performTransition(url, unifiedColors, 'Loading Unified Gaming Systems...', '🖥️');
+                
+            } else if (url.includes('yaoi-lover')) {
+                const yaoiColors = {
+                    '--green-dark': '#1a0a0f',
+                    '--green-medium': '#3a1a2f',
+                    '--green-light': '#5a2a4f',
+                    '--green-accent': '#7c4c6c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#9a6a8a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                performTransition(url, yaoiColors, 'Loading Yaoi-Lover...', '💙');
+                
+            } else if (url.includes('yuri-lover')) {
+                const yuriColors = {
+                    '--green-dark': '#1a0f0a',
+                    '--green-medium': '#3a2f1a',
+                    '--green-light': '#5a4f2a',
+                    '--green-accent': '#7c6c4c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#9a8a6a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                performTransition(url, yuriColors, 'Loading Yuri-Lover...', '💖');
             }
         });
     });
