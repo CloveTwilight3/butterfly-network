@@ -104,13 +104,22 @@ header {
 /* ================= LINK SECTION ================= */
 .link-section {
     padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* ================= LINK BUTTONS ================= */
 .link-button {
-    display: inline-block;
-    margin: 15px;
-    padding: 12px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    min-height: 140px;
+    width: 100%;
     font-size: 1.1rem;
     color: var(--text-light);
     text-decoration: none;
