@@ -105,7 +105,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#7aff7a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, cloveColors, 'Loading CloveTwilight3...', '🌸');
+                performTransition(url, cloveColors, 'Switching to Clove`s content...', '🍃');
                 
             } else if (url.includes('themidnightcyan')) {
                 const cyanColors = {
@@ -117,7 +117,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#6aff6a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, cyanColors, 'Loading TheMidnightCyan...', '🌙');
+                performTransition(url, cyanColors, 'Loading Athena`s Content...', '🌙');
                 
             } else if (url.includes('alextlm')) {
                 const alexColors = {
@@ -129,7 +129,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#8aff8a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, alexColors, 'Loading AlexTLM...', '⚡');
+                performTransition(url, alexColors, 'Loading AlexTLM Music...', '🎧');
                 
             } else if (url.includes('doughmination')) {
                 const doughColors = {
@@ -141,7 +141,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#9aff5a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, doughColors, 'Loading Doughmination...', '🍞');
+                performTransition(url, doughColors, 'Loading Doughmination System...', '🍩');
                 
             } else if (url.includes('hunt-rix')) {
                 const huntColors = {
@@ -153,7 +153,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#6aff9a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, huntColors, 'Loading Hunt-Rix...', '🎯');
+                performTransition(url, huntColors, 'Loading Huntrix Rocks...', '🎯');
                 
             } else if (url.includes('mazeymoos')) {
                 const mazeyColors = {
@@ -165,7 +165,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#9a8a9a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, mazeyColors, 'Loading MazeyMoos...', '🐄');
+                performTransition(url, mazeyColors, 'Loading MazeyMoos Gaming...', '🦋');
                 
             } else if (url.includes('myluminarasystem')) {
                 const luminaraColors = {
@@ -177,7 +177,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#6a8a9a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, luminaraColors, 'Loading MyLuminaraSystem...', '✨');
+                performTransition(url, luminaraColors, 'Loading My Luminara System...', '✨');
                 
             } else if (url.includes('trans4trans')) {
                 const trans4transColors = {
@@ -189,7 +189,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#9a6a9a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, trans4transColors, 'Loading Trans4Trans...', '🏳️‍⚧️');
+                performTransition(url, trans4transColors, 'Loading Trans4Trans Letters...', '✉️');
                 
             } else if (url.includes('transgamers')) {
                 const transgamersColors = {
@@ -213,7 +213,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#9a9a6a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, unifiedColors, 'Loading Unified Gaming Systems...', '🖥️');
+                performTransition(url, unifiedColors, 'Loading UnifiedGaming Systems...', '🖥️');
                 
             } else if (url.includes('yaoi-lover')) {
                 const yaoiColors = {
@@ -225,7 +225,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#9a6a8a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, yaoiColors, 'Loading Yaoi-Lover...', '💙');
+                performTransition(url, yaoiColors, 'Loading Yaoi Lover Cheat Sheets...', '📚');
                 
             } else if (url.includes('yuri-lover')) {
                 const yuriColors = {
@@ -237,7 +237,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#9a8a6a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, yuriColors, 'Loading Yuri-Lover...', '💖');
+                performTransition(url, yuriColors, 'Loading Yuri Lover Files...', '📂');
             }
         });
     });
