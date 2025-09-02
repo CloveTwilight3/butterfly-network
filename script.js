@@ -81,87 +81,59 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Enhanced transition functionality for syster and system buttons
+    // Enhanced transition functionality for link buttons
     setupTransitionButtons();
 });
 
 function setupTransitionButtons() {
-    // Syster button transition (slightly different twilight variant)
-    const systerButton = document.querySelector('.syster-button a');
-    if (systerButton) {
-        systerButton.addEventListener('click', (e) => {
+    // Get the actual link buttons from your HTML
+    const linkButtons = document.querySelectorAll('.link-button');
+    
+    linkButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
             e.preventDefault();
-            const url = systerButton.href;
-
-            // Syster's twilight color scheme (warmer purples)
-            const systerColors = {
-                '--cyan-dark': '#003f5c',
-                '--cyan-medium': '#2f6690',
-                '--cyan-light': '#84a9ac',
-                '--lavender-purple': '#9b7cb6',
-                '--diamond-pink': '#f8d7da',
-                '--diamond-cream': '#fff8dc',
-                '--text-light': '#f5f5f5',
-                '--text-muted': '#d1c7d8',
-                '--accent-glow': '#a388ee'
-            };
-
-            performTransition(url, systerColors, 'Changing to blossoming content...', '🪻');
+            const url = button.href;
+            
+            // Determine which link was clicked and use appropriate colors
+            if (url.includes('clovetwilight3')) {
+                // Clove's green color scheme (slightly brighter)
+                const cloveColors = {
+                    '--green-dark': '#0a1f0a',
+                    '--green-medium': '#1a5f1a',
+                    '--green-light': '#2e8a2e',
+                    '--green-accent': '#5cff5c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#7aff7a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                
+                performTransition(url, cloveColors, 'Loading CloveTwilight3...', '🌸');
+                
+            } else if (url.includes('themidnightcyan')) {
+                // Midnight Cyan's green color scheme (deeper)
+                const cyanColors = {
+                    '--green-dark': '#051205',
+                    '--green-medium': '#0f3d0f',
+                    '--green-light': '#1a6b1a',
+                    '--green-accent': '#3cff3c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#6aff6a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                
+                performTransition(url, cyanColors, 'Loading TheMidnightCyan...', '🌙');
+            }
         });
-    }
-
-    // System button transition (deeper twilight variant)
-    const systemButton = document.querySelector('.system-button a');
-    if (systemButton) {
-        systemButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            const url = systemButton.href;
-
-            // System colors (darker, more mysterious)
-            const systemColors = {
-                '--cyan-dark': '#1a0f2e',
-                '--cyan-medium': '#2f1b4a',
-                '--cyan-light': '#5b4b75',
-                '--lavender-purple': '#7b6cb6',
-                '--diamond-pink': '#d8c7da',
-                '--diamond-cream': '#f0e8dc',
-                '--accent-glow': '#8388ee'
-            };
-
-            performTransition(url, systemColors, 'Connecting to system hub...', '⭐');
-        });
-    }
-
-    // Github button transition (deeper twilight variant)
-    const githubButton = document.querySelector('.github-button a');
-    if (githubButton) {
-        githubButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            const url = githubButton.href;
-
-            // System colors (darker, more mysterious)
-            const githubColors = {
-                '--cyan-dark': '#1a0f2e',
-                '--cyan-medium': '#2f1b4a',
-                '--cyan-light': '#5b4b75',
-                '--lavender-purple': '#7b6cb6',
-                '--diamond-pink': '#d8c7da',
-                '--diamond-cream': '#f0e8dc',
-                '--accent-glow': '#8388ee'
-            };
-
-            performTransition(url, githubColors, 'Loading Github...', '🖥️');
-        });
-    }
+    });
 }
 
 function performTransition(url, colorScheme, loadingText, emoji = '✦') {
-    // Create transition overlay with HARDCODED starting cyan colors
+    // Create transition overlay with HARDCODED starting green colors
     const transitionOverlay = document.createElement('div');
     transitionOverlay.className = 'transition-overlay';
 
-    // Set initial hardcoded cyan colors AND transition property
-    transitionOverlay.style.background = 'linear-gradient(135deg, #003f5c 0%, #2f6690 100%)';
+    // Set initial hardcoded green colors AND transition property
+    transitionOverlay.style.background = 'linear-gradient(135deg, #0d1b0d 0%, #145214 100%)';
     transitionOverlay.style.transition = 'opacity 0.6s ease, background 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
 
     // Create loading content
@@ -198,13 +170,13 @@ function performTransition(url, colorScheme, loadingText, emoji = '✦') {
                 align-items: center;
                 z-index: 10000;
                 opacity: 0;
-                cusor: none;
+                cursor: none;
                 pointer-events: none;
             }
             
             .transition-overlay.fade-in {
                 opacity: 1;
-                cusor: none;
+                cursor: none;
                 pointer-events: none;
             }
             
@@ -281,7 +253,7 @@ function performTransition(url, colorScheme, loadingText, emoji = '✦') {
         // Start color transition after overlay is visible
         setTimeout(() => {
             // Transition the overlay background to target colors
-            const targetGradient = `linear-gradient(135deg, ${colorScheme['--cyan-dark']} 0%, ${colorScheme['--cyan-medium']} 100%)`;
+            const targetGradient = `linear-gradient(135deg, ${colorScheme['--green-dark']} 0%, ${colorScheme['--green-medium']} 100%)`;
             transitionOverlay.style.background = targetGradient;
 
             // Also change the page colors behind it
@@ -308,7 +280,7 @@ function changeColors(colorScheme) {
     });
 
     // Update the background gradient with smooth transition
-    document.body.style.background = `linear-gradient(135deg, ${colorScheme['--cyan-dark']} 0%, ${colorScheme['--cyan-medium']} 100%)`;
+    document.body.style.background = `linear-gradient(135deg, ${colorScheme['--green-dark']} 0%, ${colorScheme['--green-medium']} 100%)`;
 
     // Clean up transition styles after animation completes
     setTimeout(() => {
@@ -328,26 +300,24 @@ function resetTransitionState() {
         transitionStyles.remove();
     }
 
-    // Reset CSS custom properties to original twilight values
+    // Reset CSS custom properties to original green values
     const root = document.documentElement;
     const originalColors = {
-        '--twilight-dark': '#2a1b3d',
-        '--twilight-medium': '#44318d',
-        '--twilight-light': '#6b5b95',
-        '--butterfly-purple': '#9b7cb6',
-        '--sugar-pink': '#f8d7da',
-        '--sugar-cream': '#fff8dc',
-        '--text-light': '#f5f5f5',
-        '--text-muted': '#d1c7d8',
-        '--accent-glow': '#a388ee'
+        '--green-dark': '#0d1b0d',
+        '--green-medium': '#145214',
+        '--green-light': '#1e7a1e',
+        '--green-accent': '#4cff4c',
+        '--text-light': '#e8f5e9',
+        '--accent-glow': '#6aff6a',
+        '--lavender-purple': '#9b7cb6'
     };
 
     Object.entries(originalColors).forEach(([property, value]) => {
         root.style.setProperty(property, value);
     });
 
-    // Reset body background to original twilight gradient
-    document.body.style.background = 'linear-gradient(135deg, var(--twilight-dark) 0%, var(--twilight-medium) 100%)';
+    // Reset body background to original green gradient
+    document.body.style.background = 'linear-gradient(135deg, var(--green-dark) 0%, var(--green-medium) 100%)';
 }
 
 // Also reset on page show event (handles back button better)
