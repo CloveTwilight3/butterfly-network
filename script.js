@@ -165,7 +165,7 @@ function setupTransitionButtons() {
                     '--accent-glow': '#9a8a9a',
                     '--lavender-purple': '#9b7cb6'
                 };
-                performTransition(url, mazeyColors, 'Loading MazeyMoos Gaming...', '🦋');
+                performTransition(url, mazeyColors, 'Loading EstrogenHRT Gaming...', '🦋');
                 
             } else if (url.includes('myluminarasystem')) {
                 const luminaraColors = {
