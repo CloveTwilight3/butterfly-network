@@ -92,7 +92,7 @@ function setupTransitionButtons() {
     linkButtons.forEach(button => {
         button.addEventListener('click', (e) => {
             e.preventDefault();
-            const url = button.href;
+            const url = button.dataset.url;
             
             // Determine which link was clicked and use appropriate colors
             if (url.includes('clovetwilight3')) {
