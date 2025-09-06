@@ -166,6 +166,17 @@ function setupTransitionButtons() {
                     '--lavender-purple': '#9b7cb6'
                 };
                 performTransition(url, mazeyColors, 'Loading EstrogenHRT Gaming...', '🦋');
+            } else if (url.includes('lgbwitht')) {
+                const lgbColors = {
+                    '--green-dark': '#5a5943',
+                    '--green-medium': '#7d7c5c',
+                    '--green-light': '#a5a481',
+                    '--green-accent': '#7c6c7c',
+                    '--text-light': '#e8f5e9',
+                    '--accent-glow': '#9a8a9a',
+                    '--lavender-purple': '#9b7cb6'
+                };
+                performTransition(url, lgbColors, 'Loading LGBwithT...', '🏳️‍🌈');
                 
             } else if (url.includes('myluminarasystem')) {
                 const luminaraColors = {
